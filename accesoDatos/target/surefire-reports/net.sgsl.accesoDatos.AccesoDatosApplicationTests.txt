@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: net.sgsl.accesoDatos.AccesoDatosApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.926 s <<< FAILURE! - in net.sgsl.accesoDatos.AccesoDatosApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: net.sgsl.accesoDatos.entidades.Terreno column: id_productor (should be mapped with insert="false" update="false")
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: net.sgsl.accesoDatos.entidades.Terreno column: id_productor (should be mapped with insert="false" update="false")
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: net.sgsl.accesoDatos.entidades.Terreno column: id_productor (should be mapped with insert="false" update="false")
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: net.sgsl.accesoDatos.entidades.Terreno column: id_productor (should be mapped with insert="false" update="false")
+
